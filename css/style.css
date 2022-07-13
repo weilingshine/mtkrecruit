@@ -1,0 +1,311 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei", "微軟正黑體";
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.btn-003158 {
+  color: #fff;
+  background-color: #003158;
+  border-color: #003158;
+  color: #fed954;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .btn-003158 {
+    font-size: 20px;
+    padding: 15px 50px;
+    border-radius: 10px;
+  }
+}
+
+.btn-003158:hover {
+  color: #003158;
+  background-color: #fed954;
+  border-color: #fed954;
+  -webkit-box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+}
+
+.btn-003158:focus {
+  color: #003158;
+  background-color: #fed954;
+  border-color: #fed954;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.1);
+          box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.1);
+}
+
+.toplinkzone {
+  background-color: #374357;
+  width: 100%;
+  height: 28px;
+  font-size: 13px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  visibility: visible;
+  display: inline-block;
+  margin: 0;
+}
+
+.card_jobs_btn {
+  width: 100%;
+  text-align: center;
+}
+
+section.head_banner {
+  margin-top: 28px;
+}
+
+section.section_info {
+  position: relative;
+  padding: 30px 0 40px;
+}
+
+@media (min-width: 992px) {
+  section.section_info {
+    padding: 60px 0 70px;
+  }
+}
+
+section.section_info h3 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  color: #003158;
+}
+
+@media (min-width: 992px) {
+  section.section_info h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+section.section_info article.card_jobs_box {
+  margin-top: 40px;
+  background: #cdf1f2;
+  border: 2px #6cd5d9 solid;
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+  section.section_info article.card_jobs_box {
+    margin-top: 60px;
+  }
+}
+
+section.section_info article.card_jobs_box header.card_jobs_title {
+  margin: -15px auto 0;
+  padding: 12px 0;
+  width: 60%;
+  background: #53abc8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  section.section_info article.card_jobs_box header.card_jobs_title {
+    width: 53%;
+  }
+}
+
+section.section_info article.card_jobs_box header.card_jobs_title h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  section.section_info article.card_jobs_box header.card_jobs_title h2 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+}
+
+section.section_info article.card_jobs_box ol {
+  margin: 0 10px 0 40px;
+  padding: 16px 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  color: #003158;
+}
+
+@media (min-width: 992px) {
+  section.section_info article.card_jobs_box ol {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+section.section_info article.card_jobs_box ol li {
+  list-style: disc;
+}
+
+section.section_info article.card_jobs_box ol li span {
+  color: #ff0000;
+}
+
+section.section_info article.card_jobs_box a {
+  margin-bottom: 18px;
+}
+
+section.section_info p {
+  margin-top: 40px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: 992px) {
+  section.section_info p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+section.section_info p span {
+  color: #0088cc;
+}
+
+@media (min-width: 1200px) {
+  section.section_info .bg_left {
+    position: absolute;
+    background: url(../img/bg_left.svg) no-repeat;
+    background-position: 20% bottom;
+    background-size: 50%;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.section_info .bg_right {
+    position: absolute;
+    background: url(../img/bg_right.svg) no-repeat;
+    background-position: 80% 0;
+    background-size: 50%;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+section.section_news {
+  background: #f5f5f5;
+  padding: 40px 0;
+}
+
+@media (min-width: 992px) {
+  section.section_news {
+    padding: 60px 0  80px;
+  }
+}
+
+section.section_news h2 {
+  text-align: center;
+  color: #003158;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+section.section_news h2::after {
+  content: '';
+  display: block;
+  margin: 10px auto 0;
+  top: 80px;
+  width: 80px;
+  height: 4px;
+  background: #003158;
+}
+
+@media (min-width: 992px) {
+  section.section_news h2::after {
+    margin: 15px auto 0;
+  }
+}
+
+section.section_news .card_news_content {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px 15px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  section.section_news .card_news_content {
+    margin: 35px 0;
+    padding: 50px 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.section_news .card_news_content {
+    margin: 35px 0;
+    padding: 50px 60px;
+  }
+}
+
+section.section_news .card_news_content p {
+  margin: 0 0 1rem;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: 992px) {
+  section.section_news .card_news_content p {
+    font-size: 18px;
+    margin: 0 0 28px;
+    line-height: 30px;
+  }
+}
+
+section.section_news .card_news_content p span {
+  color: #0088cc;
+}
+
+section.section_news .card_news_content p:last-child {
+  margin: 0 0 0;
+}
+
+footer.footer {
+  padding: 30px 15px;
+  text-align: center;
+  background: #585858;
+}
+
+footer.footer h4 {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

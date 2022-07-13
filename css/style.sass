@@ -24,54 +24,6 @@
         @content
 
 // 共通 css開始
-*
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-
-html
-    // scroll-behavior: smooth
-
-body
-    font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei", "微軟正黑體"
-    font-weight: 400
-
-h1, h2, h3, h4, h5, h6 ,p
-    margin-bottom: 0
-img
-    width: 100%
-
-.btn-003158  
-    color: #fff
-    background-color: #003158
-    border-color: #003158
-    color: #fed954
-    font-size: 18px
-    padding: 10px 30px
-    border-radius: 10px
-    @include lgScreen
-        font-size: 20px
-        padding: 15px 50px
-        border-radius: 10px
-
-    &:hover
-        color: #003158
-        background-color: #fed954
-        border-color: #fed954
-        box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1)
-    &:focus
-        color: #003158
-        background-color: #fed954
-        border-color: #fed954
-        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.1)
-
-
-
-    
-
-
-
-
 .toplinkzone
     background-color: #374357
     width: 100%
@@ -84,17 +36,64 @@ img
     visibility: visible
     display: inline-block
     margin: 0
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: 'Noto Sans TC', sans-serif, "Microsoft JhengHei", "微軟正黑體"
+    font-weight: 400
+    font-size: 16px
+    line-height: 26px
+    @include lgScreen
+        font-size: 18px
+        line-height: 28px
+
+h1, h2, h3, h4, h5, h6 ,p
+    margin-bottom: 0
+img
+    width: 100%
+// btn style
+.btn-003158  
+    color: #fff
+    background-color: #003158
+    border-color: #003158
+    color: #fed954
+    font-size: 18px
+    padding: 10px 30px
+    border-radius: 10px
+    @include mdScreen
+        font-size: 20px
+        padding: 15px 50px
+        border-radius: 10px
+    &:hover
+        color: #003158
+        background-color: #fed954
+        border-color: #fed954
+        box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1)
+    &:focus
+        color: #003158
+        background-color: #fed954
+        border-color: #fed954
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.1)
+        
+// 共用btn 樣式 
 .card_jobs_btn
     width: 100%
     text-align: center
 
+//banner 
 section.head_banner
     margin-top: 28px
 
+// 內容區
 section.section_info
     position: relative
     padding: 30px 0 40px
-    
     @include lgScreen
         padding: 60px 0 70px
     h3
@@ -112,7 +111,7 @@ section.section_info
         border-radius: 4px
         @include lgScreen
             margin-top: 60px
-        header.card_jobs_title
+        .card_jobs_title
             margin: -15px auto 0
             padding: 12px 0
             width: 60%
@@ -120,15 +119,14 @@ section.section_info
             border-radius: 4px
             text-align: center
             @include mdScreen
-                width: 53%
-            h2
-                font-size: 22px
+                width: 80%
+        h2
+            font-size: 22px
+            font-weight: 700
+            color: #fff
+            @include lgScreen
+                font-size: 34px
                 font-weight: 700
-                color: #fff
-                @include lgScreen
-                    font-size: 34px
-                    font-weight: 700
-        
         ol
             margin: 0 10px 0 40px
             padding: 16px 0
@@ -137,7 +135,6 @@ section.section_info
             line-height: 28px
             color: #003158
             @include lgScreen
-                // padding: 25px 0
                 font-size: 20px
                 line-height: 30px
             li
@@ -146,25 +143,19 @@ section.section_info
                     color: #ff0000
         a
             margin-bottom: 18px
-
     p
-        margin-top: 40px
+        margin-top: 28px
         text-align: justify
-        font-size: 16px
-        line-height: 26px
-        @include lgScreen
-            // margin-top: 50px
-            font-size: 18px
-            line-height: 30px
         span
             color: #0088cc
+        &:nth-child(1)
+            margin-top: 40px
     .bg_left
         @include xlScreen
             position: absolute
             background: url(../img/bg_left.svg) no-repeat
             background-position: 20% bottom
             background-size: 50%
-            
             top: 0
             left: 0
             right: 50%
@@ -172,20 +163,18 @@ section.section_info
             z-index: -1
     .bg_right
         @include xlScreen
-        
             position: absolute
             background: url(../img/bg_right.svg) no-repeat
             background-position: 80% 0
             background-size: 50%
-            
             top: 0
             left: 50%
             right: 0
             bottom: 0
             z-index: -1
 
-section.section_news
-    background: #f5f5f5
+// 福利制度 & 招募多元人才 樣式共用
+.same_section_set
     padding: 40px 0
     @include lgScreen
         padding: 60px 0  80px
@@ -204,12 +193,12 @@ section.section_news
             background: #003158
             @include lgScreen
                 margin: 15px auto 0
-    .card_news_content
+    .card_content
         background: #fff
         margin: 20px 0
         padding: 20px 15px
         border-radius: 4px
-        box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1)
+        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1)
         @include mdScreen
             margin: 35px 0
             padding: 50px 60px
@@ -217,24 +206,72 @@ section.section_news
         @include lgScreen
             margin: 35px 0
             padding: 50px 60px
+// 福利制度
+section.section_benefits
+    background: #f5f5f5
+    ol
+        text-align: left
+        li
+            list-style: none
+            padding: 3px 0
+            b
+                color: #003158
+// 招募多元人才
+section.section_recruit
+    position: relative
+    .bg_left
+        @include xlScreen
+            position: absolute
+            background: url(../img/bg_right.svg) no-repeat
+            background-position: 0 bottom
+            background-size: 50%
+            top: 0
+            left: 0
+            right: 50%
+            bottom: 0
+            z-index: -1
+    .bg_right
+        @include xlScreen
+            position: absolute
+            
+            background: url(../img/bg_left.svg) no-repeat
+            background-position: 100% top
+            background-size: 50%
+            top: 0
+            left: 50%
+            right: 0
+            bottom: 0
+            z-index: -1
+    .card_content
+        // background: #f5f5f5
+        margin: 20px 0
+        padding: 20px 15px
+        border-radius: 4px
+        box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1)
+        @include mdScreen
+            margin: 35px 0
+            padding: 50px 60px
+        @include lgScreen
+            margin: 35px 0
+            padding: 50px 60px
         p
             margin: 0 0 1rem
             text-align: justify
-            font-size: 16px
-            line-height: 26px
             @include lgScreen
-                font-size: 18px
                 margin: 0 0 28px
-                line-height: 30px
             span
                 color: #0088cc
             &:last-child
                 margin: 0 0 0
-                
+            b
+                color: #003158
+        p.text-center
+            padding: 5px 
+            background: #cdf1f2
+            font-weight: 500
+            color: #003158
 
-
- 
-
+// footer
 footer.footer
     padding: 30px 15px
     text-align: center
@@ -242,7 +279,7 @@ footer.footer
     h4
         position: relative
         font-size: 16px
-        font-weight: 700
+        font-weight: 400
         color: #fff
         
             
